@@ -3,12 +3,12 @@
 iOS shopping app developed using SwiftUI.<br>
 Once the cart is filled, the user can checkout using Apple Pay.
 
-![alt text](https://github.com/PierrickPro/shopApp/blob/main/screenshots/Simulator%20Screenshot%201.png?raw=true)
+<img src="screenshots/Simulator%20Screenshot%201.png" alt="Framed Screenshot 1" width="250">
 
-![alt text](https://github.com/PierrickPro/shopApp/blob/main/screenshots/Simulator%20Screenshot%202.png?raw=true)
+<img src="screenshots/Simulator%20Screenshot%202.png" alt="Framed Screenshot 2" width="250">
 
-![alt text](https://github.com/PierrickPro/shopApp/blob/main/screenshots/Simulator%20Screenshot%203.png?raw=true)
+<img src="screenshots/Simulator%20Screenshot%203.png" alt="Framed Screenshot 3" width="250">
 
-![alt text](https://github.com/PierrickPro/shopApp/blob/main/screenshots/Simulator%20Screenshot%204.png?raw=true)
+<img src="screenshots/Simulator%20Screenshot%204.png" alt="Framed Screenshot 4" width="250">
 
 All the item images were generated using AI.
