@@ -9,26 +9,47 @@ import SwiftUI
 
 struct CartView: View {
     @EnvironmentObject var cartManager: CartManager
+    
     var body: some View {
         ScrollView {
-            if cartManager.products.count > 0 {
-                ForEach(cartManager.products, id: \.id) {
-                    product in
-                    ProductRow(product: product)
-                }
-                
-                HStack {
-                    Text("Your cart total is")
-                    Spacer()
-                    Text("$\(cartManager.total).00")
-                        .bold()
-                }
-            } else {
-                Text("Your cart is empty")
-            }
+            content
         }
-        .navigationTitle(Text("My Cart"))
+        .navigationTitle("My Cart")
         .padding(.top)
+        .onDisappear {
+            cartManager.paymentSuccess = false
+        }
+    }
+    
+    @ViewBuilder
+    private var content: some View {
+        if cartManager.paymentSuccess {
+            Text("Thanks for your purchase! You'll also receive an email confirmation shortly.")
+                .padding()
+        } else if cartManager.products.isEmpty {
+            Text("Your cart is empty")
+        } else {
+            cartContent
+        }
+    }
+    
+    private var cartContent: some View {
+        VStack(spacing: 16) {
+            ForEach(cartManager.products, id: \.id) { product in
+                ProductRow(product: product)
+            }
+            
+            HStack {
+                Text("Your cart total is")
+                Spacer()
+                Text("$\(cartManager.total).00")
+                    .bold()
+            }
+            .padding()
+            
+            PaymentButton(action: cartManager.pay)
+                .padding()
+        }
     }
 }
 

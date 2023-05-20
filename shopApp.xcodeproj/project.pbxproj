@@ -13,6 +13,8 @@
 		A51D32892A17057700BEAC28 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D32882A17057700BEAC28 /* CartView.swift */; };
 		A51D328D2A17077B00BEAC28 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D328C2A17077B00BEAC28 /* CartManager.swift */; };
 		A51D328F2A170EF200BEAC28 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D328E2A170EF200BEAC28 /* ProductRow.swift */; };
+		A51D32912A1816D500BEAC28 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D32902A1816D500BEAC28 /* PaymentButton.swift */; };
+		A51D32942A1871A400BEAC28 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D32932A1871A400BEAC28 /* PaymentHandler.swift */; };
 		A54CA9DB2A1410520024238A /* shopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54CA9DA2A1410520024238A /* shopAppApp.swift */; };
 		A54CA9DD2A1410520024238A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54CA9DC2A1410520024238A /* ContentView.swift */; };
 		A54CA9DF2A1410520024238A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54CA9DE2A1410520024238A /* Assets.xcassets */; };
@@ -26,6 +28,9 @@
 		A51D32882A17057700BEAC28 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		A51D328C2A17077B00BEAC28 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		A51D328E2A170EF200BEAC28 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		A51D32902A1816D500BEAC28 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		A51D32922A18714D00BEAC28 /* shopApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shopApp.entitlements; sourceTree = "<group>"; };
+		A51D32932A1871A400BEAC28 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		A54CA9D72A1410520024238A /* shopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54CA9DA2A1410520024238A /* shopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopAppApp.swift; sourceTree = "<group>"; };
 		A54CA9DC2A1410520024238A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 				A51D32832A16D24F00BEAC28 /* ProductCard.swift */,
 				A51D32862A17024000BEAC28 /* CartButton.swift */,
 				A51D328E2A170EF200BEAC28 /* ProductRow.swift */,
+				A51D32902A1816D500BEAC28 /* PaymentButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -90,6 +96,7 @@
 		A54CA9D92A1410520024238A /* shopApp */ = {
 			isa = PBXGroup;
 			children = (
+				A51D32922A18714D00BEAC28 /* shopApp.entitlements */,
 				A54CA9DA2A1410520024238A /* shopAppApp.swift */,
 				A51D32852A16F0EB00BEAC28 /* Views */,
 				A51D32822A16D22900BEAC28 /* Components */,
@@ -97,6 +104,7 @@
 				A54CA9DE2A1410520024238A /* Assets.xcassets */,
 				A54CA9E02A1410520024238A /* Preview Content */,
 				A51D328C2A17077B00BEAC28 /* CartManager.swift */,
+				A51D32932A1871A400BEAC28 /* PaymentHandler.swift */,
 			);
 			path = shopApp;
 			sourceTree = "<group>";
@@ -179,6 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51D32912A1816D500BEAC28 /* PaymentButton.swift in Sources */,
+				A51D32942A1871A400BEAC28 /* PaymentHandler.swift in Sources */,
 				A51D32892A17057700BEAC28 /* CartView.swift in Sources */,
 				A54CA9DD2A1410520024238A /* ContentView.swift in Sources */,
 				A51D328D2A17077B00BEAC28 /* CartManager.swift in Sources */,
@@ -312,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = shopApp/shopApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"shopApp/Preview Content\"";
@@ -341,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = shopApp/shopApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"shopApp/Preview Content\"";
